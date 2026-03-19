@@ -1,0 +1,17 @@
+:root {
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --bg-card-hover: #1c2128;
+  --accent-orange: #ff6b35;
+  --accent-gold: #f0b429;
+  --accent-blue: #58a6ff;
+  --accent-red: #f85149;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --border: #30363d;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-display: "Bebas Neue", "Impact", sans-serif;
+  --font-body: "Rajdhani", "Segoe UI", sans-serif;
+}

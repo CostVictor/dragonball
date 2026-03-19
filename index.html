@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Busque personagens de Dragon Ball por gênero e raça."
+    />
+    <title>Personagens Dragon Ball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Personagens Dragon Ball</h1>
+      <p class="header-subtitle">Explore o universo de personagens</p>
+    </header>
+
+    <main>
+      <section class="filters-section" aria-label="Filtros de busca">
+        <form class="form-user" id="form-filters" novalidate>
+          <div class="filter-group">
+            <span class="filter-label">Gênero</span>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="gender" value="" checked />
+                <span>Ambos</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="male" />
+                <span>Homem</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="female" />
+                <span>Mulher</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="race" class="filter-label">Raça</label>
+            <select id="race" name="race" aria-label="Filtrar por raça">
+              <option value="">Todas</option>
+              <option value="Human">Humano</option>
+              <option value="Saiyan">Saiyajin</option>
+              <option value="Namekian">Namekuseijin</option>
+              <option value="Majin">Majin</option>
+              <option value="Android">Androide</option>
+              <option value="Jiren Race">Raça do Jiren</option>
+              <option value="God">Deus</option>
+              <option value="Angel">Anjo</option>
+              <option value="Frieza Race">Raça Frieza</option>
+              <option value="Evil">Maligno</option>
+              <option value="Nucleico">Nucleico</option>
+              <option value="Nucleico benigno">Nucleico benigno</option>
+              <option value="Unknown">Desconhecida</option>
+            </select>
+          </div>
+
+          <button
+            type="button"
+            class="btn-buscar"
+            id="btn-buscar"
+            aria-label="Buscar personagens"
+          >
+            Buscar Personagens
+          </button>
+        </form>
+      </section>
+
+      <div class="loading hidden" id="loading" aria-live="polite">
+        <div class="loading-spinner"></div>
+        <p>Carregando personagens...</p>
+      </div>
+
+      <div class="all-users" id="all-users" role="list"></div>
+
+      <div class="empty-state hidden" id="empty-state">
+        <p class="empty-message">Nenhum resultado encontrado.</p>
+        <p class="empty-hint">Tente alterar os filtros e buscar novamente.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Dados via
+        <a href="https://dragonball-api.com" target="_blank" rel="noopener"
+          >Dragon Ball API</a
+        >
+      </p>
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/CostVictor" target="_blank" rel="noopener"
+          >Victor Gabriel</a
+        >
+      </p>
+    </footer>
+
+    <audio id="bgm" loop preload="auto">
+      <source src="music/CHA-LA.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio.
+    </audio>
+
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
