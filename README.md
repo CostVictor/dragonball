@@ -2,6 +2,10 @@
 
 Aplicação web que lista personagens de Dragon Ball com filtros por gênero e raça, consumindo dados da [Dragon Ball API](https://dragonball-api.com).
 
+## Pré-visualização
+
+![Página inicial — filtros e grade de personagens](images/homepage.png)
+
 ## Funcionalidades
 
 - Buscar personagens por gênero (`Ambos`, `Homem`, `Mulher`)
@@ -28,6 +32,8 @@ Como o projeto é estático, você pode abrir o `index.html` diretamente no nave
 dragonball/
 ├── index.html
 ├── README.md
+├── images/
+│   └── homepage.png
 ├── services/
 │   └── api.js
 ├── scripts/
